@@ -157,7 +157,7 @@ IMAGE=$IMAGE_NAME:$TAG_PREFIX-$ROS_DISTRO$SUFFIX
 echo "Launching $IMAGE"
 
 docker run \
-    -it --rm \
+    -it --name autoware\
     $VOLUMES \
     --env="XAUTHORITY=${XAUTH}" \
     --env="DISPLAY=${DISPLAY}" \
